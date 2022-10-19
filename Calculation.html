@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="myscript.js"></script>
+  <title>Statistical Calculator</title>
+  <script src="myscript.js"></script>
+</head>
+<body>
+
+  <!-- div element for selecting elements inside form -->
+  <div id="content">
+    <h3 id = heading>Stats</h3>
+    <form>
+      <div class="entities"> <!-- class entities for selecting Text inside form -->
+        <label for="numbers"><strong>Numbers</strong></label><br/>
+      </div>
+      <input type="text" id="numbers" name="numbers">
+      </input><br/>
+
+      <div class="entities">
+        <label><b>Min</b></label><br/>
+      </div>
+      <p id="min" class="output"><br/></p> <!-- class output for selecting output elements inside the form -->
+    
+      <div class="entities">
+        <label><b>Max</b></label><br/>
+      </div>
+      
+      <p id="max" class="output"></p>
+      
+      <div class="entities">
+        <label><b>Mean</b></label><br/>
+      </div>
+      
+      <p id="mean" class="output"></p>
+
+      <div class="entities">
+        <label><b>Median</b></label><br/>
+      </div>
+      
+      <p id="median" class="output"></p>
+      
+      <div class="entities">
+        <label><b>Standard Deviation</b></label><br/>
+      </div>
+
+      <p id="standard-deviation" class="output"></p><br/>
+      <button type="button" id="button" onclick="calculate()">Calculate</button>
+      <!-- on clicking button it will call the function Calculate in Javascript -->
+    
+    </form>
+  </div>
+  
+</body>
+</html>
